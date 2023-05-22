@@ -5,8 +5,8 @@ terraform validate
 terraform plan
 terraform apply
 
-kubectl get deployment -n k8s-ns-by-tf
-kubectl get pods -n k8s-ns-by-tf
+kubectl get deployment -n ns-created-by-tf
+kubectl get pods -n ns-created-by-tf
 
 terraform destroy
 
