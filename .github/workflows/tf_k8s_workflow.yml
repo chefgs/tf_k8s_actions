@@ -56,7 +56,7 @@ jobs:
     - name: Terraform Apply
       run: |
         echo "** Running Terraform Apply**"
-        terraform plan -destroy
+        terraform apply -auto-approve
       working-directory: ${{ github.event.inputs.tfpath }}
 
     - name: Verify Kubernetes Deployment
