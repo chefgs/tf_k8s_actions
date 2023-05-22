@@ -30,10 +30,10 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2.5.0
     
-    - name: Install Minikube For GitHub Actions
+    - name: Install Minikube for GitHub Actions
       uses: medyagh/setup-minikube@v0.0.13
       
-    - name: Install Kubectl tool for GitHub Acions
+    - name: Install Kubectl tool for GitHub Actions
       uses: Azure/setup-kubectl@v3
 
     - name: Setup Terraform CLI
