@@ -1,0 +1,12 @@
+
+terraform fmt
+terraform init
+terraform validate
+terraform plan
+terraform apply
+
+kubectl get deployment -n k8s-ns-by-tf
+kubectl get pods -n k8s-ns-by-tf
+
+terraform destroy
+
