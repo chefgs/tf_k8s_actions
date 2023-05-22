@@ -28,11 +28,7 @@
 - `workflow_displatch` - It is the sub block inside the `on` event triggering block, in which we can specify what are the inputs needed to trigger the workflow. 
 - `jobs` block - In this block we'll define the workflow actions like code building, testing and deployment to environments. A workflow run is made up of one or more `jobs` that can run sequentially or in parallel
 - `steps` block - This is a sub block inside `jobs`, where each stages of job will be defined
-
 - After adding a new workflow file in the `$REPO_HOME_PATH/.github/workflows` directory, it will be showing up in the repo `actions` tab. (As shown below) 
-
-![TF workflow trigger](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sm7n7m3rfcaxtxp8rlcp.png)
-
 -  When we create a gh workflow with workflow_dispatch, it has to be pushed into `main` branch. If we try to add it on another branch, the option `run workflow` to manually triggering the workflow won't be visible. Refer the community discussion [here](https://github.com/orgs/community/discussions/25219)   
 
 ### App Link
